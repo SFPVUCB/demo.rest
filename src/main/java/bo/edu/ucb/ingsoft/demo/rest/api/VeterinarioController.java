@@ -20,13 +20,13 @@ public class VeterinarioController
     @Autowired
     private GestionVeterinarioBl gestionVeterinarioBl;
 
-    @GetMapping (path = "/veterinario/{id_veterinario}")
-    public Veterinario findVeterinarioById(@PathVariable Integer id_veterinario) {
-        Veterinario veterinario = gestionVeterinarioBl.findVeterinarioById(id_veterinario);
+    @GetMapping (path = "/veterinario/{apellido}")
+    public Veterinario findVeterinarioById(@PathVariable String apellido) {
+        Veterinario veterinario = gestionVeterinarioBl.findVeterinarioById(apellido);
         if (veterinario != null) {
-            return gestionVeterinarioBl.findVeterinarioById(id_veterinario);
+            return gestionVeterinarioBl.findVeterinarioById(apellido);
         } else {
-            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "No existe el veterinario con codigo:" + id_veterinario );
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "No existe el veterinario con codigo:" + apellido );
         }
     }
 

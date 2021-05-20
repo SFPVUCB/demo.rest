@@ -4,7 +4,6 @@ Content-Type: application/json
 Accept: application/json
 
 {
-  "id_veterinario": 33,
   "id_usuario": 1,
   "id_veterinaria": 1,
   "id_imagen": 4,
@@ -15,4 +14,4 @@ Accept: application/json
   "lugar_formacion": "loyola"
 }
 ###
-GET http://localhost:8080/veterinario
+GET http://localhost:8080/veterinario/Pardo

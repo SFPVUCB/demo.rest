@@ -19,9 +19,9 @@ public class GestionVeterinarioBl
         return veterinarioDao.crearVeterinario(veterinario);
     }
 
-    public Veterinario findVeterinarioById(Integer id_veterinario) {
+    public Veterinario findVeterinarioById(String apellido) {
 
-        return veterinarioDao.findVeterianrioById(id_veterinario);
+        return veterinarioDao.findVeterianrioById(apellido);
     }
 
     public List<Veterinario> findAllVeterinarios() {
