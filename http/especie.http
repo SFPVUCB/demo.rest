@@ -1,4 +1,34 @@
-
 ###
 
+
+GET http://localhost:8080/especie/1
+
+###
 GET http://localhost:8080/especie
+
+###
+DELETE http://localhost:8080/especie/4
+###
+POST http://localhost:8080/especie
+Content-Type: application/json
+Accept: application/json
+
+{
+  "especieId": 4,
+  "especie": "aracnidos"
+}
+
+###
+PUT http://localhost:8080/especie/5
+Content-Type: application/json
+Accept: application/json
+
+{
+  "especie": "pastelitos"
+}
+
+###
+GET https://ucb.edu.bo
+
+
+###
