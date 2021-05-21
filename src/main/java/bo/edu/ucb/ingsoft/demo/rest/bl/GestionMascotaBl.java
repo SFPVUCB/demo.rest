@@ -23,8 +23,7 @@ public class GestionMascotaBl {
         return mascotaDao.findMascotaById(id_mascota);
     }
 
-    public List<Mascota> findAllMascotas() {
-        return mascotaDao.findAllMascota();
+    public List<Mascota> findAllMascotas() { return mascotaDao.findAllMascota();
     }
 
 }
