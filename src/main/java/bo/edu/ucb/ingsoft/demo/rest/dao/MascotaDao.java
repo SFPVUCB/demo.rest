@@ -1,6 +1,6 @@
 package bo.edu.ucb.ingsoft.demo.rest.dao;
 
-import bo.edu.ucb.ingsoft.demo.rest.dto.Horario;
+
 import bo.edu.ucb.ingsoft.demo.rest.dto.Mascota;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -20,11 +20,11 @@ public class MascotaDao {
     private SequenceDao sequenceDao;
 
     public Mascota crearMascota (Mascota mascota) {
-        mascota.setId_mascota(sequenceDao.getPrimaryKeyForTable("mascota")); ;
+        mascota.setId_mascota(sequenceDao.getPrimaryKeyForTable("mascota"));
         Connection conn = null;
         try {
             conn = dataSource.getConnection();
-            PreparedStatement stmt = conn.prepareStatement("INSERT INTO mascota VALUES (?,?,?,?,?,?,?,?,?,?) ");
+            PreparedStatement stmt = conn.prepareStatement("INSERT INTO mascota VALUES (?,?,?,?,?,?,?,?,?) ");
             stmt.setInt(1, mascota.getId_mascota());
             stmt.setInt(2, mascota.getId_especie());
             stmt.setInt(3, mascota.getId_raza());
@@ -34,6 +34,7 @@ public class MascotaDao {
             stmt.setString(7, mascota.getTamaño());
             stmt.setString(8, mascota.getSexo());
             stmt.setDate(9, (Date) mascota.getFecha_registro());
+            stmt.executeUpdate();
         } catch (Exception ex) {
             ex.printStackTrace();
         } finally {

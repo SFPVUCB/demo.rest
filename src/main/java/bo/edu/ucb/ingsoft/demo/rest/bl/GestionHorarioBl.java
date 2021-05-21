@@ -24,7 +24,7 @@ public class GestionHorarioBl {
     }
 
     public List<Horario> findAllHorarios() {
-        return horarioDao.findAllHoraios();
+        return horarioDao.findAllHorarios();
     }
 
 }

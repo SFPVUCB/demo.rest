@@ -14,14 +14,13 @@ public class GestionVeterinarioBl
     VeterinarioDao veterinarioDao;
 
     public Veterinario crearVeterinario(Veterinario veterinario) {
-        // Computamos el nuemero de seguro social, conformado por los tres primeros caracteres
-        // del nombre mas los tres primeros del apelliod
+
         return veterinarioDao.crearVeterinario(veterinario);
     }
 
-    public Veterinario findVeterinarioById(String apellido) {
+    public Veterinario findVeterinarioByApellido(String apellido) {
 
-        return veterinarioDao.findVeterianrioById(apellido);
+        return veterinarioDao.findVeterianrioByApellido(apellido);
     }
 
     public List<Veterinario> findAllVeterinarios() {

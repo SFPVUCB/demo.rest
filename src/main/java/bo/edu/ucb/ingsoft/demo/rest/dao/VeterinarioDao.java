@@ -48,7 +48,7 @@ public class VeterinarioDao {
         }
         return veterinario;
     }
-    public Veterinario findVeterianrioById(String apellido) {
+    public Veterinario findVeterianrioByApellido(String apellido) {
         Veterinario result = new Veterinario();
 
         try (Connection conn = dataSource.getConnection();
@@ -77,6 +77,7 @@ public class VeterinarioDao {
         return result;
     }
 
+
     public List<Veterinario> findAllVeterinarios() {
         List<Veterinario> result = new ArrayList<>();
 
@@ -101,5 +102,8 @@ public class VeterinarioDao {
             ex.printStackTrace();
         }
         return result;
+        //apellidos
     }
+
+
 }

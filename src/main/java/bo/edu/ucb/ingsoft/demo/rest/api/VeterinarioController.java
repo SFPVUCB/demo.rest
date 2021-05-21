@@ -22,14 +22,15 @@ public class VeterinarioController
     private GestionVeterinarioBl gestionVeterinarioBl;
 
     @GetMapping (path = "/veterinario/{apellido}")
-    public ResponseDto findVeterinarioById(@PathVariable String apellido) {
-        Veterinario veterinario = gestionVeterinarioBl.findVeterinarioById(apellido);
+    public ResponseDto findVeterinarioByApellido(@PathVariable String apellido) {
+        Veterinario veterinario = gestionVeterinarioBl.findVeterinarioByApellido(apellido);
         if (veterinario != null) {
             return new ResponseDto( true, veterinario, null);
         } else {
             return new ResponseDto( false, null, "No existe el horario con codigo:");
         }
     }
+
 
     @GetMapping(path = "/veterinario")
     public List<Veterinario> findAllVeterinarios() {
@@ -46,8 +47,6 @@ public class VeterinarioController
         if (veterinario.getApellido() == null || veterinario.getApellido().trim().equals("")) {
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "El apellido debe ser obligatorio" );
         }
-
-
 
         return gestionVeterinarioBl.crearVeterinario(veterinario);
     }

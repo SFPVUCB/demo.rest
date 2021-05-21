@@ -5,8 +5,11 @@ import bo.edu.ucb.ingsoft.demo.rest.bl.GestionMascotaBl;
 import bo.edu.ucb.ingsoft.demo.rest.dto.Horario;
 import bo.edu.ucb.ingsoft.demo.rest.dto.Mascota;
 import bo.edu.ucb.ingsoft.demo.rest.dto.ResponseDto;
+import bo.edu.ucb.ingsoft.demo.rest.dto.Veterinario;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.server.ResponseStatusException;
 
 import javax.sql.DataSource;
 
@@ -35,11 +38,10 @@ public class MascotaController {
     }
 
     @PostMapping(path = "/mascota")
-    public ResponseDto createMascota(@RequestBody Mascota mascota) {
+    public Mascota crearMascota(@RequestBody Mascota mascota) {
         // Validar que los datos enviados son correctos.
 
-
-        return new ResponseDto(true, gestionMascotaBl.crearMascota(mascota), null);
+        return gestionMascotaBl.crearMascota(mascota);
     }
 
 }

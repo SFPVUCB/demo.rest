@@ -30,6 +30,7 @@ public class HorarioDao {
             stmt.setString(3, horario.getDia());
             stmt.setTime(4, horario.getDesde_hrs());
             stmt.setTime(5, horario.getHasta_hrs());
+            stmt.executeUpdate();
         } catch (Exception ex) {
             ex.printStackTrace();
         } finally {
@@ -68,7 +69,7 @@ public class HorarioDao {
         return result;
     }
 
-    public List<Horario> findAllHoraios() {
+    public List<Horario> findAllHorarios() {
         List<Horario> result = new ArrayList<>();
 
         try (Connection conn = dataSource.getConnection();
