@@ -14,4 +14,4 @@ Accept: application/json
   "lugar_formacion": "loyola"
 }
 ###
-GET http://localhost:8080/veterinario/Pardo
+GET http://localhost:8080/veterinario/

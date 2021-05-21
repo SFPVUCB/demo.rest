@@ -19,12 +19,12 @@ public class VeterinarioDao {
     private SequenceDao sequenceDao;
 
     public Veterinario crearVeterinario (Veterinario veterinario) {
-        //veterinario.setId_veterinario(sequenceDao.getPrimaryKeyForTable("veterinario"));
+        veterinario.setId_veterinario(sequenceDao.getPrimaryKeyForTable("veterinario"));
         Connection conn = null;
 
         try {
             conn = dataSource.getConnection();
-            PreparedStatement stmt = conn.prepareStatement("INSERT INTO veterinario(id_veterinario,id_usuario,id_veterinaria, nombre, apellido,email,departamento,lugar_formacion)" + "VALUES (?,?,?,?,?,?,?,?,?) ");
+            PreparedStatement stmt = conn.prepareStatement("INSERT INTO veterinario VALUES (?,?,?,?,?,?,?,?,?) ");
             stmt.setInt(1, veterinario.getId_veterinario());
             stmt.setInt(2, veterinario.getId_usuario());
             stmt.setInt(3, veterinario.getId_veterinaria());
@@ -34,6 +34,7 @@ public class VeterinarioDao {
             stmt.setString(7, veterinario.getEmail());
             stmt.setString(8, veterinario.getDepartamento());
             stmt.setString(9, veterinario.getLugar_formacion());
+            stmt.executeUpdate();
         } catch (Exception ex) {
             ex.printStackTrace();
         } finally {

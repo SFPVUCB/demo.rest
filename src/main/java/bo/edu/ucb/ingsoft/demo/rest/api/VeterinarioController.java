@@ -1,6 +1,7 @@
 package bo.edu.ucb.ingsoft.demo.rest.api;
 
 import bo.edu.ucb.ingsoft.demo.rest.bl.GestionVeterinarioBl;
+import bo.edu.ucb.ingsoft.demo.rest.dto.ResponseDto;
 import bo.edu.ucb.ingsoft.demo.rest.dto.Veterinario;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -21,12 +22,12 @@ public class VeterinarioController
     private GestionVeterinarioBl gestionVeterinarioBl;
 
     @GetMapping (path = "/veterinario/{apellido}")
-    public Veterinario findVeterinarioById(@PathVariable String apellido) {
+    public ResponseDto findVeterinarioById(@PathVariable String apellido) {
         Veterinario veterinario = gestionVeterinarioBl.findVeterinarioById(apellido);
         if (veterinario != null) {
-            return gestionVeterinarioBl.findVeterinarioById(apellido);
+            return new ResponseDto( true, veterinario, null);
         } else {
-            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "No existe el veterinario con codigo:" + apellido );
+            return new ResponseDto( false, null, "No existe el horario con codigo:");
         }
     }
 

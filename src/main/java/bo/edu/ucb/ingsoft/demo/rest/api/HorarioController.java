@@ -19,7 +19,7 @@ public class HorarioController {
     private GestionHorarioBl gestionHorarioBl;
 
     @GetMapping(path = "/horario/{id_horario}")
-    public ResponseDto findPersonaById(@PathVariable Integer id_horario) {
+    public ResponseDto findHorarioById(@PathVariable Integer id_horario) {
         Horario horario = gestionHorarioBl.findHorarioById(id_horario);
         if (horario != null) {
             return new ResponseDto( true, horario, null);
