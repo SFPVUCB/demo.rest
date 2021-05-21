@@ -24,7 +24,7 @@ public class MascotaDao {
         Connection conn = null;
         try {
             conn = dataSource.getConnection();
-            PreparedStatement stmt = conn.prepareStatement("INSERT INTO mascota VALUES (?,?,?,?,?,?,?,?,?) ");
+            PreparedStatement stmt = conn.prepareStatement("INSERT INTO mascota VALUES (?,?,?,?,?,?,?,?,?,?) ");
             stmt.setInt(1, mascota.getId_mascota());
             stmt.setInt(2, mascota.getId_especie());
             stmt.setInt(3, mascota.getId_raza());
@@ -32,8 +32,9 @@ public class MascotaDao {
             stmt.setInt(5, mascota.getId_dueño());
             stmt.setString(6, mascota.getNombre_mascota());
             stmt.setString(7, mascota.getTamaño());
-            stmt.setString(8, mascota.getSexo());
-            stmt.setDate(9, (Date) mascota.getFecha_registro());
+            stmt.setString(8, mascota.getColor());
+            stmt.setString(9, mascota.getSexo());
+            stmt.setDate(10, (Date) mascota.getFecha_registro());
             stmt.executeUpdate();
         } catch (Exception ex) {
             ex.printStackTrace();

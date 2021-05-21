@@ -13,6 +13,5 @@ Accept: application/json
   "nombre_mascota": "Peluchin",
   "tamaño": "Mediano",
   "color": "Blanco",
-  "sexo": "Macho",
-  "fecha_registro": "2020-4-1"
+  "sexo": "Macho"
 }

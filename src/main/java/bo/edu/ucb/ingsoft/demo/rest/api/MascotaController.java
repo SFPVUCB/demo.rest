@@ -38,7 +38,7 @@ public class MascotaController {
     }
 
     @PostMapping(path = "/mascota")
-    public Mascota crearMascota(@RequestBody Mascota mascota) {
+    public Mascota createMascota(@RequestBody Mascota mascota) {
         // Validar que los datos enviados son correctos.
 
         return gestionMascotaBl.crearMascota(mascota);
