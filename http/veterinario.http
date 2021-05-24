@@ -13,5 +13,7 @@ Accept: application/json
   "departamento": "La Paz",
   "lugar_formacion": "loyola"
 }
-###
-GET http://localhost:8080/veterinario/Arancibia
+### BUSQUEDA POR DEPARTAMENTO
+GET http://localhost:8080/veterinario2/Potosi
+### BUSQUEDA POR APELLIDO
+GET http://localhost:8080/veterinario3/Rojas

@@ -27,7 +27,7 @@ public class CalificacionDao {
             stmt.setInt(1, calificacion.getCalificacion());
             stmt.setInt(2, calificacion.getId_usuario());
             stmt.setInt(3, calificacion.getId_consulta());
-            stmt.setDate(4, (Date) calificacion.getFecha());
+            stmt.setDate(4, new Date(calificacion.getFecha().getTime()));
             stmt.setInt(5, calificacion.getCalificacion());
         } catch (Exception ex) {
             ex.printStackTrace();

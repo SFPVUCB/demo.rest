@@ -48,7 +48,7 @@ public class VeterinarioDao {
         }
         return veterinario;
     }
-    /*
+
     public Veterinario findVeterianrioByDepartamento(String departamento) {
         Veterinario result = new Veterinario();
 
@@ -78,7 +78,6 @@ public class VeterinarioDao {
         return result;
     }
 
-     */
     public Veterinario findVeterinarioByApellido(String apellido) {
         Veterinario result = new Veterinario();
 
@@ -134,6 +133,65 @@ public class VeterinarioDao {
             ex.printStackTrace();
         }
         return result;
+        //apellidos
+    }
+
+    public List<Veterinario> findAllVeterinariosDep(String departamento) {
+        List<Veterinario> result1 = new ArrayList<>();
+
+        try (Connection conn = dataSource.getConnection();
+             PreparedStatement pstmt = conn.prepareStatement("SELECT * " +
+                     "FROM veterinario WHERE departamento = ?")
+        ) {  // TRY WITH RESOURCES
+            pstmt.setString(1, departamento);
+            ResultSet rs = pstmt.executeQuery();
+            while (rs.next())
+            {
+                Veterinario veterinario = new Veterinario();
+                veterinario.setId_veterinario(rs.getInt("id_veterinario"));
+                veterinario.setId_usuario(rs.getInt("id_usuario"));
+                veterinario.setId_veterinaria(rs.getInt("id_veterinaria"));
+                veterinario.setId_imagen(rs.getInt("id_imagen"));
+                veterinario.setNombre(rs.getString("nombre"));
+                veterinario.setApellido(rs.getString("apellido"));
+                veterinario.setEmail(rs.getString("email"));
+                veterinario.setDepartamento(rs.getString("departamento"));
+                veterinario.setLugar_formacion(rs.getString("lugar_formacion"));
+                result1.add(veterinario);
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+        return result1;
+        //apellidos
+    }
+    public List<Veterinario> findAllVeterinariosApellidos(String apellido) {
+        List<Veterinario> result1 = new ArrayList<>();
+
+        try (Connection conn = dataSource.getConnection();
+             PreparedStatement pstmt = conn.prepareStatement("SELECT * " +
+                     "FROM veterinario WHERE apellido = ?")
+        ) {  // TRY WITH RESOURCES
+            pstmt.setString(1, apellido);
+            ResultSet rs = pstmt.executeQuery();
+            while (rs.next())
+            {
+                Veterinario veterinario = new Veterinario();
+                veterinario.setId_veterinario(rs.getInt("id_veterinario"));
+                veterinario.setId_usuario(rs.getInt("id_usuario"));
+                veterinario.setId_veterinaria(rs.getInt("id_veterinaria"));
+                veterinario.setId_imagen(rs.getInt("id_imagen"));
+                veterinario.setNombre(rs.getString("nombre"));
+                veterinario.setApellido(rs.getString("apellido"));
+                veterinario.setEmail(rs.getString("email"));
+                veterinario.setDepartamento(rs.getString("departamento"));
+                veterinario.setLugar_formacion(rs.getString("lugar_formacion"));
+                result1.add(veterinario);
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+        return result1;
         //apellidos
     }
 

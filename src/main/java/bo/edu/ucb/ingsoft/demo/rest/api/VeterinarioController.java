@@ -20,8 +20,8 @@ public class VeterinarioController
 
     @Autowired
     private GestionVeterinarioBl gestionVeterinarioBl;
-/*
-    @GetMapping (path = "/veterinario/{departamento}")
+
+    @GetMapping (path = "/veterinario1/{departamento}")
     public ResponseDto findVeterinarioByDepartamento(@PathVariable String departamento) {
         Veterinario veterinario = gestionVeterinarioBl.findVeterinarioByDepartamento(departamento);
         if (veterinario != null) {
@@ -31,7 +31,7 @@ public class VeterinarioController
         }
     }
 
- */
+
     @GetMapping (path = "/veterinario/{apellido}")
     public ResponseDto findVeterinarioByApellido(@PathVariable String apellido) {
         Veterinario veterinario = gestionVeterinarioBl.findVeterinarioByApellido(apellido);
@@ -63,6 +63,18 @@ public class VeterinarioController
         }
 
         return gestionVeterinarioBl.crearVeterinario(veterinario);
+    }
+
+    @GetMapping(path = "/veterinario2/{departamento}")
+    public List<Veterinario> findAllVeterinariosDep(@PathVariable String departamento) {
+        List<Veterinario> veterinario = gestionVeterinarioBl.findAllVeterinariosDep(departamento);
+        return gestionVeterinarioBl.findAllVeterinariosDep(departamento);
+    }
+
+    @GetMapping(path = "/veterinario3/{apellido}")
+    public List<Veterinario> findAllVeterinariosApellido(@PathVariable String apellido) {
+        List<Veterinario> veterinario = gestionVeterinarioBl.findAllVeterinariosDep(apellido);
+        return gestionVeterinarioBl.findAllVeterinariosApellidos(apellido);
     }
 
 }

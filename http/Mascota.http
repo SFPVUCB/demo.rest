@@ -16,4 +16,3 @@ Accept: application/json
   "sexo": "Macho",
   "fecha_registro": "2010-01-01T12:00:00+01:00"
 
-}
