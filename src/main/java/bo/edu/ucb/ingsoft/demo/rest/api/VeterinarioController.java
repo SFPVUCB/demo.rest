@@ -20,16 +20,30 @@ public class VeterinarioController
 
     @Autowired
     private GestionVeterinarioBl gestionVeterinarioBl;
+/*
+    @GetMapping (path = "/veterinario/{departamento}")
+    public ResponseDto findVeterinarioByDepartamento(@PathVariable String departamento) {
+        Veterinario veterinario = gestionVeterinarioBl.findVeterinarioByDepartamento(departamento);
+        if (veterinario != null) {
+            return new ResponseDto( true, veterinario, null);
+        } else {
+            return new ResponseDto( false, null, "No existe el veterinario con codigo:");
+        }
+    }
 
+ */
     @GetMapping (path = "/veterinario/{apellido}")
     public ResponseDto findVeterinarioByApellido(@PathVariable String apellido) {
         Veterinario veterinario = gestionVeterinarioBl.findVeterinarioByApellido(apellido);
         if (veterinario != null) {
             return new ResponseDto( true, veterinario, null);
         } else {
-            return new ResponseDto( false, null, "No existe el horario con codigo:");
+            return new ResponseDto( false, null, "No existe el veterinario con el apellido:");
         }
     }
+
+
+
 
 
     @GetMapping(path = "/veterinario")

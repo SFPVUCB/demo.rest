@@ -1,0 +1,415 @@
+GET http://localhost:8080/mascota
+
+<> 2021-05-24T170758.200.json
+
+###
+
+POST http://localhost:8080/mascota
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id_especie": 1,
+  "id_raza": 1,
+  "id_imagen": 1,
+  "id_dueño": "1",
+  "nombre_mascota": "Peluchin",
+  "tamaño": "Mediano",
+  "color": "Blanco",
+  "sexo": "Macho",
+  "fecha_registro": "2010-01-01T12:00:00+01:00"
+
+}
+
+<> 2021-05-24T170751.200.json
+
+###
+
+POST http://localhost:8080/calificacion
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id_usuario": 1,
+  "id_consulta": "viernes",
+  "fecha":"",
+  "calificacion": 5
+}
+
+<> 2021-05-24T170223.400.json
+
+###
+
+POST http://localhost:8080/calificacion
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id_usuario": 1,
+  "id_consulta": "viernes",
+  "fecha":"",
+  "calificacion": 5,
+}
+
+<> 2021-05-24T170208.400.json
+
+###
+
+POST http://localhost:8080/calificacion
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id_usuario": 1,
+  "id_consulta": "viernes",
+  "calificacion": 5,
+  "fecha": ""
+}
+
+<> 2021-05-24T165936.400.json
+
+###
+
+GET http://localhost:8080/calificacion/
+
+<> 2021-05-24T165848.200.json
+
+###
+
+POST http://localhost:8080/calificacion
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id_usuario": 1,
+  "id_consulta": "viernes",
+
+  "calificacion": 5
+}
+
+<> 2021-05-24T165841.400.json
+
+###
+
+POST http://localhost:8080/calificacion
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id_usuario": 1,
+  "id_consulta": "viernes",
+  "fecha": "",
+  "calificacion": 5
+}
+
+<> 2021-05-24T165828.400.json
+
+###
+
+POST http://localhost:8080/calificacion
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id_usuario": 1,
+  "id_consulta": "viernes",
+  "fecha": "2010-01-01",
+  "calificacion": 5
+}
+
+<> 2021-05-24T165816.400.json
+
+###
+
+POST http://localhost:8080/calificacion
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id_usuario": 1,
+  "id_consulta": "viernes",
+  "fecha": "2010-01-01T12:00:00+01:00",
+  "calificacion": 5
+}
+
+<> 2021-05-24T165754.400.json
+
+###
+
+POST http://localhost:8080/horario
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id_usuario": 1,
+  "id_consulta": "viernes",
+  "fecha": "2010-01-01T12:00:00+01:00",
+  "calificacion": 5
+}
+
+<> 2021-05-24T165728.200.json
+
+###
+
+GET http://localhost:8080/veterinario/Arancibia
+
+<> 2021-05-24T161911.200.json
+
+###
+
+GET http://localhost:8080/veterinario/Potosi
+
+<> 2021-05-24T161054.500.json
+
+###
+
+GET http://localhost:8080/veterinario/Potosi
+
+<> 2021-05-24T161042.500.json
+
+###
+
+GET http://localhost:8080/calificacion/
+
+<> 2021-05-24T011540.200.json
+
+###
+
+GET http://localhost:8080/calificacion/10
+
+<> 2021-05-24T011506.200.json
+
+###
+
+GET http://localhost:8080/calificacion
+
+<> 2021-05-24T011422.200.json
+
+###
+
+GET http://localhost:8080/veterinario/Potosi
+
+<> 2021-05-24T004824.200.json
+
+###
+
+GET http://localhost:8080/veterinario/Potosi
+
+<> 2021-05-24T004632.500.json
+
+###
+
+GET http://localhost:8080/veterinario/1
+
+<> 2021-05-24T003853.500.json
+
+###
+
+GET http://localhost:8080/veterinario/
+
+<> 2021-05-24T003841.200.json
+
+###
+
+GET http://localhost:8080/veterinario/Potosi
+
+<> 2021-05-24T003833.500.json
+
+###
+
+GET http://localhost:8080/veterinario/Potosi
+
+<> 2021-05-24T003633.500.json
+
+###
+
+GET http://localhost:8080/veterinario/Potosi
+
+<> 2021-05-24T003624.500.json
+
+###
+
+GET http://localhost:8080/veterinario/Potosi
+
+<> 2021-05-24T003514.500.json
+
+###
+
+GET http://localhost:8080/veterinario/La%20Paz
+
+<> 2021-05-24T003449.500.json
+
+###
+
+GET http://localhost:8080/veterinario/La%20Paz
+
+<> 2021-05-24T003005.200.json
+
+###
+
+GET http://localhost:8080/veterinario/Arancibia
+
+<> 2021-05-24T002944.200.json
+
+###
+
+GET http://localhost:8080/horario/
+
+<> 2021-05-24T002355.200.json
+
+###
+
+GET http://localhost:8080/mascota
+
+<> 2021-05-24T002332.200.json
+
+###
+
+GET http://localhost:8080/veterinario/
+
+<> 2021-05-24T002050.200.json
+
+###
+
+GET http://localhost:8080/veterinario/Pardo
+
+<> 2021-05-24T001514.500.json
+
+###
+
+GET http://localhost:8080/veterinario/La%20Paz
+
+<> 2021-05-24T000318.500.json
+
+###
+
+GET http://localhost:8080/veterinario/Pardo
+
+<> 2021-05-24T000306.500.json
+
+###
+
+GET http://localhost:8080/veterinario/
+
+<> 2021-05-24T000257.200.json
+
+###
+
+GET http://localhost:8080/veterinario/
+
+<> 2021-05-23T235752.200.json
+
+###
+
+GET http://localhost:8080/veterinario/Pardo
+
+<> 2021-05-23T235718.500.json
+
+###
+
+GET http://localhost:8080/veterinario/Potosi
+
+<> 2021-05-23T235320.500.json
+
+###
+
+GET http://localhost:8080/veterinario/Potosi
+
+<> 2021-05-23T235212.500.json
+
+###
+
+GET http://localhost:8080/veterinario/Santa%20Cruz
+
+<> 2021-05-23T235158.500.json
+
+###
+
+GET http://localhost:8080/veterinario/La%20Paz
+
+<> 2021-05-23T235138.500.json
+
+###
+
+GET http://localhost:8080/veterinario/Pardo
+
+<> 2021-05-23T231444.200.json
+
+###
+
+GET http://localhost:8080/veterinario
+
+<> 2021-05-23T231413.200.json
+
+###
+
+GET http://localhost:8080/veterinario
+
+<> 2021-05-23T231326.200.json
+
+###
+
+GET http://localhost:8080/veterinario/Pardo
+
+<> 2021-05-23T215002.200.json
+
+###
+
+GET http://localhost:8080/veterinario/Pardo
+
+###
+
+GET http://localhost:8080/mascota
+
+<> 2021-05-21T205829.200.json
+
+###
+
+POST http://localhost:8080/mascota
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id_especie": 1,
+  "id_raza": 1,
+  "id_imagen": 1,
+  "id_dueño": "1",
+  "nombre_mascota": "Peluchin",
+  "tamaño": "Mediano",
+  "color": "Blanco",
+  "sexo": "Macho",
+  "fecha_registro": "2010-01-01T12:00:00+01:00"
+
+}
+
+<> 2021-05-21T205823.200.json
+
+###
+
+POST http://localhost:8080/mascota
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id_especie": 1,
+  "id_raza": 1,
+  "id_imagen": 1,
+  "id_dueño": "1",
+  "nombre_mascota": "Peluchin",
+  "tamaño": "Mediano",
+  "color": "Blanco",
+  "sexo": "Macho"
+  "fecha_registro": "2010-01-01T12:00:00+01:00"
+
+}
+
+<> 2021-05-21T205802.400.json
+
+###
+
+GET http://localhost:8080/mascota
+
+<> 2021-05-21T204837.200.json
+
+###
+

@@ -1,13 +1,14 @@
 ###
 GET http://localhost:8080/horario/
+
 ###
 POST http://localhost:8080/horario
 Content-Type: application/json
 Accept: application/json
 
 {
-  "id_veterinario": 1,
-  "dia": "viernes",
-  "des_hrs": "08:00:00",
-  "hasta_hrs": "20:00:00"
+"id_veterinario": 1,
+"dia": "viernes",
+"des_hrs": "08:00:00",
+"hasta_hrs": "20:00:00"
 }

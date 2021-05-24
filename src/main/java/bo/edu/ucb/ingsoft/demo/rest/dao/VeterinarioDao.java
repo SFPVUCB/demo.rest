@@ -48,7 +48,38 @@ public class VeterinarioDao {
         }
         return veterinario;
     }
-    public Veterinario findVeterianrioByApellido(String apellido) {
+    /*
+    public Veterinario findVeterianrioByDepartamento(String departamento) {
+        Veterinario result = new Veterinario();
+
+        try (Connection conn = dataSource.getConnection();
+             PreparedStatement pstmt = conn.prepareStatement("SELECT * " +
+                     "FROM veterinario WHERE departamento = ?")
+        ) {  // TRY WITH RESOURCES
+            pstmt.setString(1, departamento);
+            ResultSet rs = pstmt.executeQuery();
+            if (rs.next()) {
+                result.setId_veterinario(rs.getInt("id_veterinario"));
+                result.setId_usuario(rs.getInt("id_usuario"));
+                result.setId_veterinaria(rs.getInt("id_veterinaria"));
+                result.setId_imagen(rs.getInt("id_imagen"));
+                result.setNombre(rs.getString("nombre"));
+                result.setApellido(rs.getString("apellido"));
+                result.setEmail(rs.getString("email"));
+                result.setDepartamento(rs.getString("departamento"));
+                result.setLugar_formacion(rs.getString("lugar_formacion"));
+
+            } else { // si no hay valores de BBDD
+                result = null;
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+        return result;
+    }
+
+     */
+    public Veterinario findVeterinarioByApellido(String apellido) {
         Veterinario result = new Veterinario();
 
         try (Connection conn = dataSource.getConnection();
@@ -85,7 +116,8 @@ public class VeterinarioDao {
              Statement stmt = conn.createStatement()) {
 
             ResultSet rs = stmt.executeQuery("SELECT * FROM veterinario");
-            while (rs.next()) {
+            while (rs.next())
+            {
                 Veterinario veterinario = new Veterinario();
                 veterinario.setId_veterinario(rs.getInt("id_veterinario"));
                 veterinario.setId_usuario(rs.getInt("id_usuario"));
@@ -104,6 +136,10 @@ public class VeterinarioDao {
         return result;
         //apellidos
     }
+
+
+
+
 
 
 }

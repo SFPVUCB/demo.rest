@@ -17,14 +17,24 @@ public class GestionVeterinarioBl
 
         return veterinarioDao.crearVeterinario(veterinario);
     }
+    /*
 
-    public Veterinario findVeterinarioByApellido(String apellido) {
-
-        return veterinarioDao.findVeterianrioByApellido(apellido);
+    public Veterinario findVeterinarioByDepartamento(String departamento)
+    {
+        return veterinarioDao.findVeterianrioByDepartamento(departamento);
     }
+     */
+    public Veterinario findVeterinarioByApellido(String apellido)
+    {
+        return veterinarioDao.findVeterinarioByApellido(apellido);
+    }
+
 
     public List<Veterinario> findAllVeterinarios() {
         return veterinarioDao.findAllVeterinarios();
     }
+
+
+
 
 }

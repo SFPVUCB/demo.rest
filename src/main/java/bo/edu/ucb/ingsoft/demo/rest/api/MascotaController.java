@@ -39,7 +39,21 @@ public class MascotaController {
 
     @PostMapping(path = "/mascota")
     public Mascota createMascota(@RequestBody Mascota mascota) {
-        // Validar que los datos enviados son correctos.
+        if (mascota.getNombre_mascota() == null || mascota.getNombre_mascota().trim().equals("")) {  // nombre: "     "
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "El nombre debe ser obligatorio" );
+        }
+        if (mascota.getTamaño() == null || mascota.getTamaño().trim().equals("")) {
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "El tamaño es obligatirio" );
+        }
+        if (mascota.getColor() == null || mascota.getColor().trim().equals("")) {
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "El tamaño es obligatirio" );
+        }
+        if (mascota.getSexo() == null || mascota.getSexo().trim().equals("")) {
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "El tamaño es obligatirio" );
+        }
+        if (mascota.getFecha_registro() == null || mascota.getFecha_registro().equals("")) {
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "El tamaño es obligatirio" );
+        }
 
         return gestionMascotaBl.crearMascota(mascota);
     }

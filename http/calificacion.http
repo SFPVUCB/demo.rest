@@ -1,0 +1,13 @@
+###
+GET http://localhost:8080/calificacion/
+###
+POST http://localhost:8080/calificacion
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id_usuario": 1,
+  "id_consulta": "viernes",
+  "fecha":"",
+  "calificacion": 5
+}
