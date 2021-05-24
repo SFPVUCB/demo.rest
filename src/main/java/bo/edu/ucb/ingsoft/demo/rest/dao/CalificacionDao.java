@@ -24,11 +24,12 @@ public class CalificacionDao {
         try {
             conn = dataSource.getConnection();
             PreparedStatement stmt = conn.prepareStatement("INSERT INTO calificacion VALUES (?,?,?,?,?) ");
-            stmt.setInt(1, calificacion.getCalificacion());
+            stmt.setInt(1, calificacion.getId_calificacion());
             stmt.setInt(2, calificacion.getId_usuario());
             stmt.setInt(3, calificacion.getId_consulta());
             stmt.setDate(4, new Date(calificacion.getFecha().getTime()));
             stmt.setInt(5, calificacion.getCalificacion());
+            stmt.executeUpdate();
         } catch (Exception ex) {
             ex.printStackTrace();
         } finally {

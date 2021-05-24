@@ -1,9 +1,7 @@
 package bo.edu.ucb.ingsoft.demo.rest.api;
 
 import bo.edu.ucb.ingsoft.demo.rest.bl.GestionCalificacionBl;
-import bo.edu.ucb.ingsoft.demo.rest.bl.GestionHorarioBl;
 import bo.edu.ucb.ingsoft.demo.rest.dto.Calificacion;
-import bo.edu.ucb.ingsoft.demo.rest.dto.Horario;
 import bo.edu.ucb.ingsoft.demo.rest.dto.ResponseDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -37,7 +35,6 @@ public class CalificacionController {
     @PostMapping(path = "/calificacion")
     public ResponseDto createCalificacion(@RequestBody Calificacion calificacion) {
         // Validar que los datos enviados son correctos.
-
 
         return new ResponseDto(true, gestionCalificacionBl.crearCalificacion(calificacion), null);
     }

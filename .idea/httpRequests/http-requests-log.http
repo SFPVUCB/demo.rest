@@ -1,3 +1,282 @@
+GET http://localhost:8080/calificacion/1
+
+<> 2021-05-24T193541.200.json
+
+###
+
+GET http://localhost:8080/calificacion/1
+
+<> 2021-05-24T193503.200.json
+
+###
+
+GET http://localhost:8080/calificacion/1
+
+<> 2021-05-24T193345.200.json
+
+###
+
+GET http://localhost:8080/calificacion/
+
+<> 2021-05-24T192614.200.json
+
+###
+
+POST http://localhost:8080/calificacion
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id_usuario": 1,
+  "id_consulta": 3,
+  "calificacion": 5,
+  "fecha":"2002-02-01"
+
+}
+
+<> 2021-05-24T192609.200.json
+
+###
+
+POST http://localhost:8080/calificacion
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id_usuario": 1,
+  "id_consulta": 3,
+  "calificacion": 5,
+  "fecha":"2002-02-01"
+
+}
+
+<> 2021-05-24T192412.200.json
+
+###
+
+GET http://localhost:8080/calificacion/
+
+<> 2021-05-24T192230.200.json
+
+###
+
+POST http://localhost:8080/calificacion
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id_usuario": 1,
+  "id_consulta": 3,
+  "calificacion": 5,
+  "fecha":"2002-02-01"
+
+}
+
+<> 2021-05-24T192217.200.json
+
+###
+
+GET http://localhost:8080/calificacion/
+
+<> 2021-05-24T192143.200.json
+
+###
+
+GET http://localhost:8080/calificacion/
+
+<> 2021-05-24T192139.200.json
+
+###
+
+POST http://localhost:8080/calificacion
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id_usuario": 1,
+  "id_consulta": "viernes",
+  "fecha":"2002-02-01",
+  "calificacion": 5
+}
+
+<> 2021-05-24T191942.400.json
+
+###
+
+POST http://localhost:8080/calificacion
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id_usuario": 1,
+  "id_consulta": "viernes",
+  "fecha":"",
+  "calificacion": 5
+}
+
+<> 2021-05-24T191759.400.json
+
+###
+
+POST http://localhost:8080/calificacion
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id_usuario": 1,
+  "id_consulta": "viernes",
+  "fecha":"",
+  "calificacion": 5
+}
+
+<> 2021-05-24T191624.400.json
+
+###
+
+GET http://localhost:8080/calificacion/
+
+<> 2021-05-24T191619.200.json
+
+###
+
+GET http://localhost:8080/veterinario/2
+
+<> 2021-05-24T191239.200.json
+
+###
+
+GET http://localhost:8080/veterinario/2
+
+<> 2021-05-24T191149.200.json
+
+###
+
+GET http://localhost:8080/veterinario/1
+
+<> 2021-05-24T191105.200.json
+
+###
+
+GET http://localhost:8080/veterinario1/1
+
+<> 2021-05-24T185153.200.json
+
+###
+
+GET http://localhost:8080/veterinario1/1
+
+<> 2021-05-24T185126.500.json
+
+###
+
+GET http://localhost:8080/veterinario1/1
+
+<> 2021-05-24T185119.500.json
+
+###
+
+GET http://localhost:8080/horario1/1
+
+<> 2021-05-24T184408.200.json
+
+###
+
+GET http://localhost:8080/horario1/1
+
+<> 2021-05-24T183955.200.json
+
+###
+
+GET http://localhost:8080/horario1/viernes
+
+<> 2021-05-24T183414.200.json
+
+###
+
+GET http://localhost:8080/horario1/viernes
+
+<> 2021-05-24T183316.500.json
+
+###
+
+GET http://localhost:8080/horario/
+
+<> 2021-05-24T183301.200.json
+
+###
+
+GET http://localhost:8080/horario1/1
+
+<> 2021-05-24T183048.200.json
+
+###
+
+GET http://localhost:8080/horario1/
+
+<> 2021-05-24T181156.404.json
+
+###
+
+GET http://localhost:8080/horario/4
+
+<> 2021-05-24T181147.200.json
+
+###
+
+GET http://localhost:8080/horario/1
+
+<> 2021-05-24T181140.200.json
+
+###
+
+GET http://localhost:8080/horario/
+
+<> 2021-05-24T181136.200.json
+
+###
+
+GET http://localhost:8080/horario/2
+
+<> 2021-05-24T181128.200.json
+
+###
+
+GET http://localhost:8080/horario/1
+
+<> 2021-05-24T181122.200.json
+
+###
+
+GET http://localhost:8080/horario/2
+
+<> 2021-05-24T181103.200.json
+
+###
+
+GET http://localhost:8080/horario1/2
+
+<> 2021-05-24T181046.200.json
+
+###
+
+GET http://localhost:8080/horario/
+
+<> 2021-05-24T180228.200.json
+
+###
+
+GET http://localhost:8080/horario1/2
+
+<> 2021-05-24T180222.200.json
+
+###
+
+GET http://localhost:8080/horario1/1
+
+<> 2021-05-24T180134.200.json
+
+###
+
 GET http://localhost:8080/horario/
 
 <> 2021-05-24T173855.200.json
@@ -88,300 +367,6 @@ Accept: application/json
 }
 
 <> 2021-05-24T170751.200.json
-
-###
-
-POST http://localhost:8080/calificacion
-Content-Type: application/json
-Accept: application/json
-
-{
-  "id_usuario": 1,
-  "id_consulta": "viernes",
-  "fecha":"",
-  "calificacion": 5
-}
-
-<> 2021-05-24T170223.400.json
-
-###
-
-POST http://localhost:8080/calificacion
-Content-Type: application/json
-Accept: application/json
-
-{
-  "id_usuario": 1,
-  "id_consulta": "viernes",
-  "fecha":"",
-  "calificacion": 5,
-}
-
-<> 2021-05-24T170208.400.json
-
-###
-
-POST http://localhost:8080/calificacion
-Content-Type: application/json
-Accept: application/json
-
-{
-  "id_usuario": 1,
-  "id_consulta": "viernes",
-  "calificacion": 5,
-  "fecha": ""
-}
-
-<> 2021-05-24T165936.400.json
-
-###
-
-GET http://localhost:8080/calificacion/
-
-<> 2021-05-24T165848.200.json
-
-###
-
-POST http://localhost:8080/calificacion
-Content-Type: application/json
-Accept: application/json
-
-{
-  "id_usuario": 1,
-  "id_consulta": "viernes",
-
-  "calificacion": 5
-}
-
-<> 2021-05-24T165841.400.json
-
-###
-
-POST http://localhost:8080/calificacion
-Content-Type: application/json
-Accept: application/json
-
-{
-  "id_usuario": 1,
-  "id_consulta": "viernes",
-  "fecha": "",
-  "calificacion": 5
-}
-
-<> 2021-05-24T165828.400.json
-
-###
-
-POST http://localhost:8080/calificacion
-Content-Type: application/json
-Accept: application/json
-
-{
-  "id_usuario": 1,
-  "id_consulta": "viernes",
-  "fecha": "2010-01-01",
-  "calificacion": 5
-}
-
-<> 2021-05-24T165816.400.json
-
-###
-
-POST http://localhost:8080/calificacion
-Content-Type: application/json
-Accept: application/json
-
-{
-  "id_usuario": 1,
-  "id_consulta": "viernes",
-  "fecha": "2010-01-01T12:00:00+01:00",
-  "calificacion": 5
-}
-
-<> 2021-05-24T165754.400.json
-
-###
-
-POST http://localhost:8080/horario
-Content-Type: application/json
-Accept: application/json
-
-{
-  "id_usuario": 1,
-  "id_consulta": "viernes",
-  "fecha": "2010-01-01T12:00:00+01:00",
-  "calificacion": 5
-}
-
-<> 2021-05-24T165728.200.json
-
-###
-
-GET http://localhost:8080/veterinario/Arancibia
-
-<> 2021-05-24T161911.200.json
-
-###
-
-GET http://localhost:8080/veterinario/Potosi
-
-<> 2021-05-24T161054.500.json
-
-###
-
-GET http://localhost:8080/veterinario/Potosi
-
-<> 2021-05-24T161042.500.json
-
-###
-
-GET http://localhost:8080/calificacion/
-
-<> 2021-05-24T011540.200.json
-
-###
-
-GET http://localhost:8080/calificacion/10
-
-<> 2021-05-24T011506.200.json
-
-###
-
-GET http://localhost:8080/calificacion
-
-<> 2021-05-24T011422.200.json
-
-###
-
-GET http://localhost:8080/veterinario/Potosi
-
-<> 2021-05-24T004824.200.json
-
-###
-
-GET http://localhost:8080/veterinario/Potosi
-
-<> 2021-05-24T004632.500.json
-
-###
-
-GET http://localhost:8080/veterinario/1
-
-<> 2021-05-24T003853.500.json
-
-###
-
-GET http://localhost:8080/veterinario/
-
-<> 2021-05-24T003841.200.json
-
-###
-
-GET http://localhost:8080/veterinario/Potosi
-
-<> 2021-05-24T003833.500.json
-
-###
-
-GET http://localhost:8080/veterinario/Potosi
-
-<> 2021-05-24T003633.500.json
-
-###
-
-GET http://localhost:8080/veterinario/Potosi
-
-<> 2021-05-24T003624.500.json
-
-###
-
-GET http://localhost:8080/veterinario/Potosi
-
-<> 2021-05-24T003514.500.json
-
-###
-
-GET http://localhost:8080/veterinario/La%20Paz
-
-<> 2021-05-24T003449.500.json
-
-###
-
-GET http://localhost:8080/veterinario/La%20Paz
-
-<> 2021-05-24T003005.200.json
-
-###
-
-GET http://localhost:8080/veterinario/Arancibia
-
-<> 2021-05-24T002944.200.json
-
-###
-
-GET http://localhost:8080/horario/
-
-<> 2021-05-24T002355.200.json
-
-###
-
-GET http://localhost:8080/mascota
-
-<> 2021-05-24T002332.200.json
-
-###
-
-GET http://localhost:8080/veterinario/
-
-<> 2021-05-24T002050.200.json
-
-###
-
-GET http://localhost:8080/veterinario/Pardo
-
-<> 2021-05-24T001514.500.json
-
-###
-
-GET http://localhost:8080/veterinario/La%20Paz
-
-<> 2021-05-24T000318.500.json
-
-###
-
-GET http://localhost:8080/veterinario/Pardo
-
-<> 2021-05-24T000306.500.json
-
-###
-
-GET http://localhost:8080/veterinario/
-
-<> 2021-05-24T000257.200.json
-
-###
-
-GET http://localhost:8080/veterinario/
-
-<> 2021-05-23T235752.200.json
-
-###
-
-GET http://localhost:8080/veterinario/Pardo
-
-<> 2021-05-23T235718.500.json
-
-###
-
-GET http://localhost:8080/veterinario/Potosi
-
-<> 2021-05-23T235320.500.json
-
-###
-
-GET http://localhost:8080/veterinario/Potosi
-
-<> 2021-05-23T235212.500.json
 
 ###
 

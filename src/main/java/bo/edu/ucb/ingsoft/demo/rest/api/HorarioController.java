@@ -4,10 +4,12 @@ import bo.edu.ucb.ingsoft.demo.rest.bl.GestionHorarioBl;
 import bo.edu.ucb.ingsoft.demo.rest.bl.GestionVeterinarioBl;
 import bo.edu.ucb.ingsoft.demo.rest.dto.Horario;
 import bo.edu.ucb.ingsoft.demo.rest.dto.ResponseDto;
+import bo.edu.ucb.ingsoft.demo.rest.dto.Veterinario;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.sql.DataSource;
+import java.util.List;
 
 @RestController
 public class HorarioController {
@@ -39,6 +41,12 @@ public class HorarioController {
 
 
         return new ResponseDto(true, gestionHorarioBl.crearHorario(horario), null);
+    }
+
+    @GetMapping(path = "/horario1/{id_veterinario}")
+    public List<Horario> findAllHorarioId(@PathVariable Integer id_veterinario) {
+        List<Horario> horario = gestionHorarioBl.findAllHorarioId(id_veterinario);
+        return gestionHorarioBl.findAllHorarioId(id_veterinario);
     }
 
 }

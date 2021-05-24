@@ -17,3 +17,5 @@ Accept: application/json
 GET http://localhost:8080/veterinario2/Potosi
 ### BUSQUEDA POR APELLIDO
 GET http://localhost:8080/veterinario3/Rojas
+### BUSQUEDA POR ID
+GET http://localhost:8080/veterinario/2

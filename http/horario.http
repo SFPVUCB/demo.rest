@@ -12,3 +12,5 @@ Accept: application/json
 "des_hrs": "08:00:00",
 "hasta_hrs": "20:00:00"
 }
+### Sacar los horarios de atencion de un veterinario por id
+GET http://localhost:8080/horario1/1

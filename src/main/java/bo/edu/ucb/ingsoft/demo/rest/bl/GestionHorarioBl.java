@@ -3,6 +3,7 @@ package bo.edu.ucb.ingsoft.demo.rest.bl;
 
 import bo.edu.ucb.ingsoft.demo.rest.dao.HorarioDao;
 import bo.edu.ucb.ingsoft.demo.rest.dto.Horario;
+import bo.edu.ucb.ingsoft.demo.rest.dto.Veterinario;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -25,6 +26,10 @@ public class GestionHorarioBl {
 
     public List<Horario> findAllHorarios() {
         return horarioDao.findAllHorarios();
+    }
+
+    public List<Horario> findAllHorarioId(Integer id_veterinario) {
+        return horarioDao.findAllHorarioId(id_veterinario);
     }
 
 }

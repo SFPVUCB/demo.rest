@@ -49,14 +49,14 @@ public class VeterinarioDao {
         return veterinario;
     }
 
-    public Veterinario findVeterianrioByDepartamento(String departamento) {
+    public Veterinario findVeterianrioById(Integer id_veterinario) {
         Veterinario result = new Veterinario();
 
         try (Connection conn = dataSource.getConnection();
              PreparedStatement pstmt = conn.prepareStatement("SELECT * " +
-                     "FROM veterinario WHERE departamento = ?")
+                     "FROM veterinario WHERE id_veterinario = ?")
         ) {  // TRY WITH RESOURCES
-            pstmt.setString(1, departamento);
+            pstmt.setInt(1, id_veterinario);
             ResultSet rs = pstmt.executeQuery();
             if (rs.next()) {
                 result.setId_veterinario(rs.getInt("id_veterinario"));
@@ -77,7 +77,7 @@ public class VeterinarioDao {
         }
         return result;
     }
-
+    /*
     public Veterinario findVeterinarioByApellido(String apellido) {
         Veterinario result = new Veterinario();
 
@@ -107,6 +107,7 @@ public class VeterinarioDao {
         return result;
     }
 
+     */
 
     public List<Veterinario> findAllVeterinarios() {
         List<Veterinario> result = new ArrayList<>();

@@ -90,4 +90,29 @@ public class HorarioDao {
         }
         return result;
     }
+    public List<Horario> findAllHorarioId(Integer id_veterinario) {
+        List<Horario> result1 = new ArrayList<>();
+
+        try (Connection conn = dataSource.getConnection();
+             PreparedStatement pstmt = conn.prepareStatement("SELECT * " +
+                     "FROM horario  WHERE id_veterinario=?")
+        ) {  // TRY WITH RESOURCES
+            pstmt.setInt(1, id_veterinario);
+            ResultSet rs = pstmt.executeQuery();
+            while (rs.next())
+            {
+                Horario horario = new Horario();
+                horario.setId_horario(rs.getInt("id_horario"));
+                horario.setId_veterinario(rs.getInt("id_veterinario"));
+                horario.setDia(rs.getString("dia"));
+                horario.setDesde_hrs(rs.getTime("desde_hrs"));
+                horario.setHasta_hrs(rs.getTime("hasta_hrs"));
+                result1.add(horario);
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+        return result1;
+        //apellidos
+    }
 }
