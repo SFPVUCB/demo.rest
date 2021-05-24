@@ -34,7 +34,7 @@ public class MascotaDao {
             stmt.setString(7, mascota.getTamaño());
             stmt.setString(8, mascota.getColor());
             stmt.setString(9, mascota.getSexo());
-            stmt.setDate(10, (Date) mascota.getFecha_registro());
+            stmt.setDate(10,  new Date(mascota.getFecha_registro().getTime()));
             stmt.executeUpdate();
         } catch (Exception ex) {
             ex.printStackTrace();
