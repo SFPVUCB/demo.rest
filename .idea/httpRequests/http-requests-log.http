@@ -1,3 +1,29 @@
+GET http://localhost:8080/mascota
+
+<> 2021-05-24T205339.200.json
+
+###
+
+POST http://localhost:8080/mascota
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id_especie": 1,
+  "id_raza": 1,
+  "id_imagen": 1,
+  "id_dueño": 2,
+  "nombre_mascota": "Rocky",
+  "tamaño": "Mediano",
+  "color": "Blanco",
+  "sexo": "Macho",
+  "fecha_registro": "2020-01-01T12:00:00+01:00"
+}
+
+<> 2021-05-24T205326.200.json
+
+###
+
 GET http://localhost:8080/calificacion/1
 
 <> 2021-05-24T193541.200.json
@@ -340,33 +366,6 @@ GET http://localhost:8080/veterinario/Arancibia
 GET http://localhost:8080/veterinario/Arancibia
 
 <> 2021-05-24T171358.200.json
-
-###
-
-GET http://localhost:8080/mascota
-
-<> 2021-05-24T170758.200.json
-
-###
-
-POST http://localhost:8080/mascota
-Content-Type: application/json
-Accept: application/json
-
-{
-  "id_especie": 1,
-  "id_raza": 1,
-  "id_imagen": 1,
-  "id_dueño": "1",
-  "nombre_mascota": "Peluchin",
-  "tamaño": "Mediano",
-  "color": "Blanco",
-  "sexo": "Macho",
-  "fecha_registro": "2010-01-01T12:00:00+01:00"
-
-}
-
-<> 2021-05-24T170751.200.json
 
 ###
 
