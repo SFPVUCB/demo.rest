@@ -16,6 +16,6 @@ Accept: application/json
 ### BUSQUEDA POR DEPARTAMENTO
 GET http://localhost:8080/veterinario2/Potosi
 ### BUSQUEDA POR APELLIDO
-GET http://localhost:8080/veterinario3/Rojas
+GET http://localhost:8080/veterinario3/Arancibia
 ### BUSQUEDA POR ID
 GET http://localhost:8080/veterinario/2

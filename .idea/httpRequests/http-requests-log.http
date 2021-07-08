@@ -1,5 +1,158 @@
 GET http://localhost:8080/mascota
 
+<> 2021-07-08T163716.200.json
+
+###
+
+GET http://localhost:8080/mascota
+
+<> 2021-07-08T163615.200.json
+
+###
+
+GET http://localhost:8080/especie
+
+<> 2021-07-07T220132.200.json
+
+###
+
+GET http://localhost:8080/especie/1
+
+<> 2021-07-07T220128.200.json
+
+###
+
+POST http://localhost:8080/especie
+Content-Type: application/json
+Accept: application/json
+
+{
+  "especieId": 4,
+  "especie": "aracnidos"
+}
+
+<> 2021-07-07T220123.200.json
+
+###
+
+GET http://localhost:8080/especie
+
+<> 2021-07-07T220112.200.json
+
+###
+
+GET http://localhost:8080/calificacion/
+
+<> 2021-07-07T215947.200.json
+
+###
+
+GET http://localhost:8080/especie/1
+
+<> 2021-07-07T215928.200.json
+
+###
+
+GET http://localhost:8080/especie
+
+<> 2021-07-07T215925.200.json
+
+###
+
+GET http://localhost:8080/especie/1
+
+<> 2021-07-07T215921.200.json
+
+###
+
+GET https://ucb.edu.bo
+
+<> 2021-07-07T215908.200.html
+
+###
+
+GET http://localhost:8080/especie
+
+<> 2021-07-07T215844.200.json
+
+###
+
+GET http://localhost:8080/especie
+
+<> 2021-07-07T215812.200.json
+
+###
+
+GET http://localhost:8080/especie
+
+<> 2021-07-07T215805.200.json
+
+###
+
+GET http://localhost:8080/veterinario3/Arancibia
+
+<> 2021-07-07T215458.200.json
+
+###
+
+GET http://localhost:8080/veterinario2/Potosi
+
+<> 2021-07-07T215447.200.json
+
+###
+
+GET http://localhost:8080/veterinario3/Arancibia
+
+<> 2021-05-24T220329.200.json
+
+###
+
+GET http://localhost:8080/veterinario3/Rojas
+
+<> 2021-05-24T220319.200.json
+
+###
+
+GET http://localhost:8080/horario1/1
+
+<> 2021-05-24T220257.200.json
+
+###
+
+GET http://localhost:8080/veterinario2/Potosi
+
+<> 2021-05-24T220237.200.json
+
+###
+
+POST http://localhost:8080/mascota
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id_especie": 1,
+  "id_raza": 1,
+  "id_imagen": 1,
+  "id_dueño": 2,
+  "nombre_mascota": "Rocky",
+  "tamaño": "Mediano",
+  "color": "Blanco",
+  "sexo": "negro",
+  "fecha_registro": "2020-01-01T12:00:00+01:00"
+}
+
+<> 2021-05-24T220021.200.json
+
+###
+
+GET http://localhost:8080/especie
+
+<> 2021-05-24T215854.200.json
+
+###
+
+GET http://localhost:8080/mascota
+
 <> 2021-05-24T205339.200.json
 
 ###
@@ -234,138 +387,6 @@ GET http://localhost:8080/horario/
 GET http://localhost:8080/horario1/1
 
 <> 2021-05-24T183048.200.json
-
-###
-
-GET http://localhost:8080/horario1/
-
-<> 2021-05-24T181156.404.json
-
-###
-
-GET http://localhost:8080/horario/4
-
-<> 2021-05-24T181147.200.json
-
-###
-
-GET http://localhost:8080/horario/1
-
-<> 2021-05-24T181140.200.json
-
-###
-
-GET http://localhost:8080/horario/
-
-<> 2021-05-24T181136.200.json
-
-###
-
-GET http://localhost:8080/horario/2
-
-<> 2021-05-24T181128.200.json
-
-###
-
-GET http://localhost:8080/horario/1
-
-<> 2021-05-24T181122.200.json
-
-###
-
-GET http://localhost:8080/horario/2
-
-<> 2021-05-24T181103.200.json
-
-###
-
-GET http://localhost:8080/horario1/2
-
-<> 2021-05-24T181046.200.json
-
-###
-
-GET http://localhost:8080/horario/
-
-<> 2021-05-24T180228.200.json
-
-###
-
-GET http://localhost:8080/horario1/2
-
-<> 2021-05-24T180222.200.json
-
-###
-
-GET http://localhost:8080/horario1/1
-
-<> 2021-05-24T180134.200.json
-
-###
-
-GET http://localhost:8080/horario/
-
-<> 2021-05-24T173855.200.json
-
-###
-
-GET http://localhost:8080/veterinario3/Rojas
-
-<> 2021-05-24T173705.200.json
-
-###
-
-GET http://localhost:8080/veterinario3/Arancibia
-
-<> 2021-05-24T173609.200.json
-
-###
-
-GET http://localhost:8080/veterinario3/Pardo
-
-<> 2021-05-24T173440.200.json
-
-###
-
-GET http://localhost:8080/veterinario2/Potosi
-
-<> 2021-05-24T172907.200.json
-
-###
-
-GET http://localhost:8080/veterinario/Lopez
-
-<> 2021-05-24T172546.200.json
-
-###
-
-GET http://localhost:8080/veterinario1/Potosi
-
-<> 2021-05-24T172532.200.json
-
-###
-
-GET http://localhost:8080/veterinario/Potosi
-
-<> 2021-05-24T172307.500.json
-
-###
-
-GET http://localhost:8080/veterinario/Arancibia
-
-<> 2021-05-24T172253.500.json
-
-###
-
-GET http://localhost:8080/veterinario/Arancibia
-
-<> 2021-05-24T172246.500.json
-
-###
-
-GET http://localhost:8080/veterinario/Arancibia
-
-<> 2021-05-24T171358.200.json
 
 ###
 
