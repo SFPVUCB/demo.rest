@@ -1,0 +1,4 @@
+### BUSQUEDA PARRA TODOS LOS ID =
+GET http://localhost:8080/especialidad/4
+### TODOS LAS CIUDADES
+GET http://localhost:8080/especialidad

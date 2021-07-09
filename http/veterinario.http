@@ -7,15 +7,17 @@ Accept: application/json
   "id_usuario": 1,
   "id_veterinaria": 1,
   "id_imagen": 4,
+  "id_ciudad": 4,
   "nombre": "martin",
   "apellido": "Sanchez",
   "email": "martin@gmail.com",
-  "departamento": "La Paz",
   "lugar_formacion": "loyola"
 }
 ### BUSQUEDA POR DEPARTAMENTO
-GET http://localhost:8080/veterinario2/Potosi
+GET http://localhost:8080/veterinario2/4
 ### BUSQUEDA POR APELLIDO
-GET http://localhost:8080/veterinario3/Arancibia
+GET http://localhost:8080/veterinario3/Pardo
 ### BUSQUEDA POR ID
-GET http://localhost:8080/veterinario/2
+GET http://localhost:8080/veterinario/1
+### BUSQUEDA PARA TODOS
+GET http://localhost:8080/veterinario

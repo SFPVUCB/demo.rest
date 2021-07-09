@@ -1,0 +1,7 @@
+### BUSQUEDA POR 1 ID
+GET http://localhost:8080/ciudad/1
+### BUSQUEDA PARRA TODOS LOS ID =
+GET http://localhost:8080/ciudad/4
+### TODOS LAS CIUDADES
+GET http://localhost:8080/ciudad1
+

@@ -1,392 +1,326 @@
-GET http://localhost:8080/mascota
+GET http://localhost:8080/especialidad
 
-<> 2021-07-08T163716.200.json
-
-###
-
-GET http://localhost:8080/mascota
-
-<> 2021-07-08T163615.200.json
+<> 2021-07-09T175225.404.json
 
 ###
 
-GET http://localhost:8080/especie
+GET http://localhost:8080/especialidad/4
 
-<> 2021-07-07T220132.200.json
-
-###
-
-GET http://localhost:8080/especie/1
-
-<> 2021-07-07T220128.200.json
+<> 2021-07-09T175222.404.json
 
 ###
 
-POST http://localhost:8080/especie
+GET http://localhost:8080/especialidad
+
+<> 2021-07-09T175014.404.json
+
+###
+
+GET http://localhost:8080/veteespe2/
+
+<> 2021-07-09T174105.200.json
+
+###
+
+GET http://localhost:8080/veteespe1/1
+
+<> 2021-07-09T174055.200.json
+
+###
+
+GET http://localhost:8080/veteespe/1
+
+<> 2021-07-09T174050.200.json
+
+###
+
+GET http://localhost:8080/especialidad
+
+<> 2021-07-09T174040.404.json
+
+###
+
+GET http://localhost:8080/especialidad1
+
+<> 2021-07-09T174009.404.json
+
+###
+
+GET http://localhost:8080/veteespe1/1
+
+<> 2021-07-09T160856.200.json
+
+###
+
+GET http://localhost:8080/veteespe2/
+
+<> 2021-07-09T160827.200.json
+
+###
+
+GET http://localhost:8080/ciudad1
+
+<> 2021-07-09T153121.200.json
+
+###
+
+GET http://localhost:8080/ciudad/4
+
+<> 2021-07-09T153119.200.json
+
+###
+
+GET http://localhost:8080/ciudad/1
+
+<> 2021-07-09T153117.200.json
+
+###
+
+GET http://localhost:8080/veteespe/1
+
+<> 2021-07-09T151731.200.json
+
+###
+
+GET http://localhost:8080/veteespe/1
+
+<> 2021-07-09T151411.200.json
+
+###
+
+GET http://localhost:8080/veteespe/1
+
+<> 2021-07-09T151318.200.json
+
+###
+
+GET http://localhost:8080/veteespe/1
+
+<> 2021-07-09T151313.200.json
+
+###
+
+GET http://localhost:8080/veteespe/4
+
+<> 2021-07-09T151145.200.json
+
+###
+
+GET http://localhost:8080/ciudad1
+
+<> 2021-07-09T143109.200.json
+
+###
+
+GET http://localhost:8080/ciudad
+
+<> 2021-07-09T143054.404.json
+
+###
+
+GET http://localhost:8080/ciudad/4
+
+<> 2021-07-09T140237.200.json
+
+###
+
+GET http://localhost:8080/veterinario_especialidad/4
+
+<> 2021-07-09T140155.500.json
+
+###
+
+GET http://localhost:8080/veterinario_especialidad/4
+
+<> 2021-07-09T140151.500.json
+
+###
+
+GET http://localhost:8080/veterinario_especialidad/4
+
+<> 2021-07-09T130459.500.json
+
+###
+
+GET http://localhost:8080/veterinario_especialidad/4
+
+<> 2021-07-09T130452.500.json
+
+###
+
+GET http://localhost:8080/ciudad/4
+
+<> 2021-07-09T121509.200.json
+
+###
+
+GET http://localhost:8080/ciudad/1
+
+<> 2021-07-09T120450.200.json
+
+###
+
+GET http://localhost:8080/ciudad/1
+
+<> 2021-07-09T120424.404.json
+
+###
+
+GET http://localhost:8080/ciudad/
+
+<> 2021-07-09T120419.404.json
+
+###
+
+GET http://localhost:8080/ciudad/1
+
+<> 2021-07-09T120413.404.json
+
+###
+
+GET http://localhost:8080/ciudad/1
+
+<> 2021-07-09T120409.404.json
+
+###
+
+GET http://localhost:8080/veterinario2/4
+
+<> 2021-07-09T112407.200.json
+
+###
+
+POST http://localhost:8080/veterinario
 Content-Type: application/json
 Accept: application/json
 
 {
-  "especieId": 4,
-  "especie": "aracnidos"
+  "usuario_id": 1,
+  "id_veterinaria": 1,
+  "id_imagen": 4,
+  "id_ciudad": 4,
+  "nombre": "martin",
+  "apellido": "Sanchez",
+  "email": "martin@gmail.com",
+  "lugar_formacion": "loyola"
 }
 
-<> 2021-07-07T220123.200.json
+<> 2021-07-09T100456.200.json
 
 ###
 
-GET http://localhost:8080/especie
+GET http://localhost:8080/veterinario
 
-<> 2021-07-07T220112.200.json
-
-###
-
-GET http://localhost:8080/calificacion/
-
-<> 2021-07-07T215947.200.json
+<> 2021-07-09T100344.200.json
 
 ###
 
-GET http://localhost:8080/especie/1
+POST http://localhost:8080/veterinario
+Content-Type: application/json
+Accept: application/json
 
-<> 2021-07-07T215928.200.json
+{
+  "id_usuario": 1,
+  "id_veterinaria": 1,
+  "id_imagen": 4,
+  "id_ciudad": 4,
+  "nombre": "martin",
+  "apellido": "Sanchez",
+  "email": "martin@gmail.com",
+  "lugar_formacion": "loyola"
+}
 
-###
-
-GET http://localhost:8080/especie
-
-<> 2021-07-07T215925.200.json
-
-###
-
-GET http://localhost:8080/especie/1
-
-<> 2021-07-07T215921.200.json
-
-###
-
-GET https://ucb.edu.bo
-
-<> 2021-07-07T215908.200.html
+<> 2021-07-09T100319.200.json
 
 ###
 
-GET http://localhost:8080/especie
+GET http://localhost:8080/veterinario2/4
 
-<> 2021-07-07T215844.200.json
-
-###
-
-GET http://localhost:8080/especie
-
-<> 2021-07-07T215812.200.json
+<> 2021-07-09T095754.200.json
 
 ###
 
-GET http://localhost:8080/especie
+GET http://localhost:8080/veterinario2/4
 
-<> 2021-07-07T215805.200.json
-
-###
-
-GET http://localhost:8080/veterinario3/Arancibia
-
-<> 2021-07-07T215458.200.json
+<> 2021-07-09T095416.500.json
 
 ###
 
 GET http://localhost:8080/veterinario2/Potosi
 
-<> 2021-07-07T215447.200.json
+<> 2021-07-09T094503.200.json
 
 ###
 
-GET http://localhost:8080/veterinario3/Arancibia
+GET http://localhost:8080/veterinario3/Pardo
 
-<> 2021-05-24T220329.200.json
-
-###
-
-GET http://localhost:8080/veterinario3/Rojas
-
-<> 2021-05-24T220319.200.json
-
-###
-
-GET http://localhost:8080/horario1/1
-
-<> 2021-05-24T220257.200.json
+<> 2021-07-09T094458.200.json
 
 ###
 
 GET http://localhost:8080/veterinario2/Potosi
 
-<> 2021-05-24T220237.200.json
+<> 2021-07-09T094451.200.json
 
 ###
 
-POST http://localhost:8080/mascota
-Content-Type: application/json
-Accept: application/json
+GET http://localhost:8080/veterinario3/Pardo
 
-{
-  "id_especie": 1,
-  "id_raza": 1,
-  "id_imagen": 1,
-  "id_dueño": 2,
-  "nombre_mascota": "Rocky",
-  "tamaño": "Mediano",
-  "color": "Blanco",
-  "sexo": "negro",
-  "fecha_registro": "2020-01-01T12:00:00+01:00"
-}
-
-<> 2021-05-24T220021.200.json
+<> 2021-07-09T094442.200.json
 
 ###
 
-GET http://localhost:8080/especie
+GET http://localhost:8080/veterinario3/Arancibia
 
-<> 2021-05-24T215854.200.json
-
-###
-
-GET http://localhost:8080/mascota
-
-<> 2021-05-24T205339.200.json
+<> 2021-07-09T094342.200.json
 
 ###
 
-POST http://localhost:8080/mascota
-Content-Type: application/json
-Accept: application/json
+GET http://localhost:8080/veterinario
 
-{
-  "id_especie": 1,
-  "id_raza": 1,
-  "id_imagen": 1,
-  "id_dueño": 2,
-  "nombre_mascota": "Rocky",
-  "tamaño": "Mediano",
-  "color": "Blanco",
-  "sexo": "Macho",
-  "fecha_registro": "2020-01-01T12:00:00+01:00"
-}
-
-<> 2021-05-24T205326.200.json
+<> 2021-07-09T094042.200.json
 
 ###
 
-GET http://localhost:8080/calificacion/1
+GET http://localhost:8080/veterinario2/Potosi
 
-<> 2021-05-24T193541.200.json
-
-###
-
-GET http://localhost:8080/calificacion/1
-
-<> 2021-05-24T193503.200.json
-
-###
-
-GET http://localhost:8080/calificacion/1
-
-<> 2021-05-24T193345.200.json
-
-###
-
-GET http://localhost:8080/calificacion/
-
-<> 2021-05-24T192614.200.json
-
-###
-
-POST http://localhost:8080/calificacion
-Content-Type: application/json
-Accept: application/json
-
-{
-  "id_usuario": 1,
-  "id_consulta": 3,
-  "calificacion": 5,
-  "fecha":"2002-02-01"
-
-}
-
-<> 2021-05-24T192609.200.json
-
-###
-
-POST http://localhost:8080/calificacion
-Content-Type: application/json
-Accept: application/json
-
-{
-  "id_usuario": 1,
-  "id_consulta": 3,
-  "calificacion": 5,
-  "fecha":"2002-02-01"
-
-}
-
-<> 2021-05-24T192412.200.json
-
-###
-
-GET http://localhost:8080/calificacion/
-
-<> 2021-05-24T192230.200.json
-
-###
-
-POST http://localhost:8080/calificacion
-Content-Type: application/json
-Accept: application/json
-
-{
-  "id_usuario": 1,
-  "id_consulta": 3,
-  "calificacion": 5,
-  "fecha":"2002-02-01"
-
-}
-
-<> 2021-05-24T192217.200.json
-
-###
-
-GET http://localhost:8080/calificacion/
-
-<> 2021-05-24T192143.200.json
-
-###
-
-GET http://localhost:8080/calificacion/
-
-<> 2021-05-24T192139.200.json
-
-###
-
-POST http://localhost:8080/calificacion
-Content-Type: application/json
-Accept: application/json
-
-{
-  "id_usuario": 1,
-  "id_consulta": "viernes",
-  "fecha":"2002-02-01",
-  "calificacion": 5
-}
-
-<> 2021-05-24T191942.400.json
-
-###
-
-POST http://localhost:8080/calificacion
-Content-Type: application/json
-Accept: application/json
-
-{
-  "id_usuario": 1,
-  "id_consulta": "viernes",
-  "fecha":"",
-  "calificacion": 5
-}
-
-<> 2021-05-24T191759.400.json
-
-###
-
-POST http://localhost:8080/calificacion
-Content-Type: application/json
-Accept: application/json
-
-{
-  "id_usuario": 1,
-  "id_consulta": "viernes",
-  "fecha":"",
-  "calificacion": 5
-}
-
-<> 2021-05-24T191624.400.json
-
-###
-
-GET http://localhost:8080/calificacion/
-
-<> 2021-05-24T191619.200.json
-
-###
-
-GET http://localhost:8080/veterinario/2
-
-<> 2021-05-24T191239.200.json
-
-###
-
-GET http://localhost:8080/veterinario/2
-
-<> 2021-05-24T191149.200.json
+<> 2021-07-09T094038.200.json
 
 ###
 
 GET http://localhost:8080/veterinario/1
 
-<> 2021-05-24T191105.200.json
+<> 2021-07-09T093914.200.json
 
 ###
 
-GET http://localhost:8080/veterinario1/1
+GET http://localhost:8080/veterinario3/Arancibia
 
-<> 2021-05-24T185153.200.json
-
-###
-
-GET http://localhost:8080/veterinario1/1
-
-<> 2021-05-24T185126.500.json
+<> 2021-07-09T093810.200.json
 
 ###
 
-GET http://localhost:8080/veterinario1/1
+GET http://localhost:8080/veterinario
 
-<> 2021-05-24T185119.500.json
-
-###
-
-GET http://localhost:8080/horario1/1
-
-<> 2021-05-24T184408.200.json
+<> 2021-07-08T215631.200.json
 
 ###
 
-GET http://localhost:8080/horario1/1
+GET http://localhost:8080/veterinario/1
 
-<> 2021-05-24T183955.200.json
-
-###
-
-GET http://localhost:8080/horario1/viernes
-
-<> 2021-05-24T183414.200.json
+<> 2021-07-08T214024.200.json
 
 ###
 
-GET http://localhost:8080/horario1/viernes
+GET http://localhost:8080/veterinario/2
 
-<> 2021-05-24T183316.500.json
-
-###
-
-GET http://localhost:8080/horario/
-
-<> 2021-05-24T183301.200.json
+<> 2021-07-08T213137.200.json
 
 ###
 
-GET http://localhost:8080/horario1/1
+GET http://localhost:8080/veterinario
 
-<> 2021-05-24T183048.200.json
+<> 2021-07-08T213121.200.json
 
 ###
 

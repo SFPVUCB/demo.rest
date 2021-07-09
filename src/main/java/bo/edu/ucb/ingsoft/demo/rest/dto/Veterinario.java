@@ -7,10 +7,10 @@ public class Veterinario
     private Integer id_usuario;
     private Integer id_veterinaria;
     private Integer id_imagen;
+    private Integer id_ciudad;
     private String nombre;
     private String apellido;
     private String email;
-    private String departamento;
     private String lugar_formacion;
     //constructor
     public Veterinario() { }
@@ -71,12 +71,13 @@ public class Veterinario
         this.email = email;
     }
 
-    public String getDepartamento() {
-        return departamento;
+    public Integer getId_ciudad() {
+
+        return id_ciudad;
     }
 
-    public void setDepartamento(String departamento) {
-        this.departamento = departamento;
+    public void setId_ciudad(Integer id_ciudad) {
+        this.id_ciudad = id_ciudad;
     }
 
     public String getLugar_formacion() {

@@ -60,9 +60,6 @@ public class VeterinarioController
         if (veterinario.getEmail() == null || veterinario.getEmail().trim().equals("")) {
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "El email debe ser obligatorio" );
         }
-        if (veterinario.getDepartamento() == null || veterinario.getDepartamento().trim().equals("")) {
-            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "El departamento debe ser obligatorio" );
-        }
         if (veterinario.getLugar_formacion() == null || veterinario.getLugar_formacion().trim().equals("")) {
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "El lugar de formacion debe ser obligatorio" );
         }
@@ -70,10 +67,10 @@ public class VeterinarioController
         return gestionVeterinarioBl.crearVeterinario(veterinario);
     }
 
-    @GetMapping(path = "/veterinario2/{departamento}")
-    public List<Veterinario> findAllVeterinariosDep(@PathVariable String departamento) {
-        List<Veterinario> veterinario = gestionVeterinarioBl.findAllVeterinariosDep(departamento);
-        return gestionVeterinarioBl.findAllVeterinariosDep(departamento);
+    @GetMapping(path = "/veterinario2/{id_ciudad}")
+    public List<Veterinario> findAllVeterinariosDep(@PathVariable Integer id_ciudad) {
+        List<Veterinario> veterinario = gestionVeterinarioBl.findAllVeterinariosDep(id_ciudad);
+        return gestionVeterinarioBl.findAllVeterinariosDep(id_ciudad);
     }
 
     @GetMapping(path = "/veterinario3/{apellido}")

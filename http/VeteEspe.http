@@ -1,0 +1,6 @@
+### BUSQUEDA PARRA TODOS LOS ID =
+GET http://localhost:8080/veteespe/1
+### BUSQUEDA PARRA TODOS LOS ID =
+GET http://localhost:8080/veteespe1/1
+### BUSQUEDA PARRA TODOS LOS ID =
+GET http://localhost:8080/veteespe2/

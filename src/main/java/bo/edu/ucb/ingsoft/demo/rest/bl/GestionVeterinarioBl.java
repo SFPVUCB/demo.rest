@@ -36,8 +36,8 @@ public class GestionVeterinarioBl
         return veterinarioDao.findAllVeterinarios();
     }
 
-    public List<Veterinario> findAllVeterinariosDep(String departamento) {
-        return veterinarioDao.findAllVeterinariosDep(departamento);
+    public List<Veterinario> findAllVeterinariosDep(Integer id_ciudad) {
+        return veterinarioDao.findAllVeterinariosDep(id_ciudad);
     }
     public List<Veterinario> findAllVeterinariosApellidos(String apellido) {
         return veterinarioDao.findAllVeterinariosApellidos(apellido);

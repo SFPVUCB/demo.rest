@@ -29,10 +29,10 @@ public class VeterinarioDao {
             stmt.setInt(2, veterinario.getId_usuario());
             stmt.setInt(3, veterinario.getId_veterinaria());
             stmt.setInt(4, veterinario.getId_imagen());
-            stmt.setString(5, veterinario.getNombre());
-            stmt.setString(6, veterinario.getApellido());
-            stmt.setString(7, veterinario.getEmail());
-            stmt.setString(8, veterinario.getDepartamento());
+            stmt.setInt(5, veterinario.getId_ciudad());
+            stmt.setString(6, veterinario.getNombre());
+            stmt.setString(7, veterinario.getApellido());
+            stmt.setString(8, veterinario.getEmail());
             stmt.setString(9, veterinario.getLugar_formacion());
             stmt.executeUpdate();
         } catch (Exception ex) {
@@ -54,19 +54,19 @@ public class VeterinarioDao {
 
         try (Connection conn = dataSource.getConnection();
              PreparedStatement pstmt = conn.prepareStatement("SELECT * " +
-                     "FROM veterinario WHERE id_veterinario = ?")
+                     "FROM veterinario WHERE veterinario_id = ?")
         ) {  // TRY WITH RESOURCES
             pstmt.setInt(1, id_veterinario);
             ResultSet rs = pstmt.executeQuery();
             if (rs.next()) {
-                result.setId_veterinario(rs.getInt("id_veterinario"));
-                result.setId_usuario(rs.getInt("id_usuario"));
-                result.setId_veterinaria(rs.getInt("id_veterinaria"));
-                result.setId_imagen(rs.getInt("id_imagen"));
+                result.setId_veterinario(rs.getInt("veterinario_id"));
+                result.setId_usuario(rs.getInt("usuario_id"));
+                result.setId_veterinaria(rs.getInt("veterinaria_id"));
+                result.setId_imagen(rs.getInt("imagen_id"));
+                result.setId_ciudad(rs.getInt("ciudad_id"));
                 result.setNombre(rs.getString("nombre"));
                 result.setApellido(rs.getString("apellido"));
                 result.setEmail(rs.getString("email"));
-                result.setDepartamento(rs.getString("departamento"));
                 result.setLugar_formacion(rs.getString("lugar_formacion"));
 
             } else { // si no hay valores de BBDD
@@ -119,14 +119,14 @@ public class VeterinarioDao {
             while (rs.next())
             {
                 Veterinario veterinario = new Veterinario();
-                veterinario.setId_veterinario(rs.getInt("id_veterinario"));
-                veterinario.setId_usuario(rs.getInt("id_usuario"));
-                veterinario.setId_veterinaria(rs.getInt("id_veterinaria"));
-                veterinario.setId_imagen(rs.getInt("id_imagen"));
+                veterinario.setId_veterinario(rs.getInt("veterinario_id"));
+                veterinario.setId_usuario(rs.getInt("usuario_id"));
+                veterinario.setId_veterinaria(rs.getInt("veterinaria_id"));
+                veterinario.setId_imagen(rs.getInt("imagen_id"));
+                veterinario.setId_ciudad(rs.getInt("ciudad_id"));
                 veterinario.setNombre(rs.getString("nombre"));
                 veterinario.setApellido(rs.getString("apellido"));
                 veterinario.setEmail(rs.getString("email"));
-                veterinario.setDepartamento(rs.getString("departamento"));
                 veterinario.setLugar_formacion(rs.getString("lugar_formacion"));
                 result.add(veterinario);
             }
@@ -137,26 +137,26 @@ public class VeterinarioDao {
         //apellidos
     }
 
-    public List<Veterinario> findAllVeterinariosDep(String departamento) {
+    public List<Veterinario> findAllVeterinariosDep(Integer id_ciudad) {
         List<Veterinario> result1 = new ArrayList<>();
 
         try (Connection conn = dataSource.getConnection();
              PreparedStatement pstmt = conn.prepareStatement("SELECT * " +
-                     "FROM veterinario WHERE departamento = ?")
+                     "FROM veterinario WHERE ciudad_id = ?")
         ) {  // TRY WITH RESOURCES
-            pstmt.setString(1, departamento);
+            pstmt.setInt(1, id_ciudad);
             ResultSet rs = pstmt.executeQuery();
             while (rs.next())
             {
                 Veterinario veterinario = new Veterinario();
-                veterinario.setId_veterinario(rs.getInt("id_veterinario"));
-                veterinario.setId_usuario(rs.getInt("id_usuario"));
-                veterinario.setId_veterinaria(rs.getInt("id_veterinaria"));
-                veterinario.setId_imagen(rs.getInt("id_imagen"));
+                veterinario.setId_veterinario(rs.getInt("veterinario_id"));
+                veterinario.setId_usuario(rs.getInt("usuario_id"));
+                veterinario.setId_veterinaria(rs.getInt("veterinaria_id"));
+                veterinario.setId_imagen(rs.getInt("imagen_id"));
+                veterinario.setId_ciudad(rs.getInt("ciudad_id"));
                 veterinario.setNombre(rs.getString("nombre"));
                 veterinario.setApellido(rs.getString("apellido"));
                 veterinario.setEmail(rs.getString("email"));
-                veterinario.setDepartamento(rs.getString("departamento"));
                 veterinario.setLugar_formacion(rs.getString("lugar_formacion"));
                 result1.add(veterinario);
             }
@@ -178,14 +178,14 @@ public class VeterinarioDao {
             while (rs.next())
             {
                 Veterinario veterinario = new Veterinario();
-                veterinario.setId_veterinario(rs.getInt("id_veterinario"));
-                veterinario.setId_usuario(rs.getInt("id_usuario"));
-                veterinario.setId_veterinaria(rs.getInt("id_veterinaria"));
-                veterinario.setId_imagen(rs.getInt("id_imagen"));
+                veterinario.setId_veterinario(rs.getInt("veterinario_id"));
+                veterinario.setId_usuario(rs.getInt("usuario_id"));
+                veterinario.setId_veterinaria(rs.getInt("veterinaria_id"));
+                veterinario.setId_imagen(rs.getInt("imagen_id"));
+                veterinario.setId_ciudad(rs.getInt("ciudad_id"));
                 veterinario.setNombre(rs.getString("nombre"));
                 veterinario.setApellido(rs.getString("apellido"));
                 veterinario.setEmail(rs.getString("email"));
-                veterinario.setDepartamento(rs.getString("departamento"));
                 veterinario.setLugar_formacion(rs.getString("lugar_formacion"));
                 result1.add(veterinario);
             }
